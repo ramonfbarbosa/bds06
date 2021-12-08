@@ -12,7 +12,7 @@ import com.devsuperior.movieflix.repositories.GenreRepository;
 public class GenreService {
 
 	@Autowired
-	private GenreRepository repository;
+	private GenreRepository repository;	
 	
 	@Transactional(readOnly = true)
 	public Page<GenreDTO> findAllPaged(Long genreId, Pageable pageable){
